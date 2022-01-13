@@ -20,7 +20,7 @@ delete from prueba.items
 where id = 1;
 
 update prueba.items
-set id = 45
+set stock = 45
 where id = 2;
 
 select * from prueba.items;
