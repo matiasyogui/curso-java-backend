@@ -1,0 +1,48 @@
+use ecommerce
+db.createCollection("mensajes")
+db.createCollection("productos")
+
+db.productos.insert({nombre: "Leche", categoria: "Lacteos", precio: 120})
+db.productos.insert({nombre: "Fideos", categoria: "Harina", precio: 580})
+db.productos.insert({nombre: "Manteca", categoria: "Lacteos", precio: 900})
+db.productos.insert({nombre: "Crema", categoria: "Lacteos", precio: 1280})
+db.productos.insert({nombre: "Pan", categoria: "Harina", precio: 2300})
+db.productos.insert({nombre: "Agua", categoria: "Bebidas", precio: 3000})
+
+db.mensajes.insert({codigo: 1, descripcion: "Primer mensaje"})
+db.mensajes.insert({codigo: 2, descripcion: "Segundo mensaje"})
+db.mensajes.insert({codigo: 3, descripcion: "Tercer mensaje"})
+db.mensajes.insert({codigo: 4, descripcion: "Cuarto mensaje"})
+
+db.productos.find()
+db.mensajes.find()
+
+db.productos.count()
+db.mensajes.count()
+
+//CREATE
+db.productos.insert({nombre: "Coca-cola", categoria: "Bebidas", precio: 3500})
+
+//READ
+db.productos.find({"precio": {$lt: 1000}})
+db.productos.find({"precio": {$gt: 1000, $lt: 3000}})
+db.productos.find({"precio": {$gt: 3000}})
+db.productos.find({}, {"nombre": 1}).sort({"precio": 1}).skip(2).limit(1)
+
+//UPDATE
+db.productos.update({}, { $set: {"stock": 100} }, {multi: true})
+
+//DELETE
+db.productos.deleteMany({"precio": {$lt: 1000}})
+
+//ROLES
+use admin
+db.createUser({user: "pepe", pwd: "asd456", roles: [{role: "read", db: "ecommerce"}]})
+
+
+
+
+
+
+
+
