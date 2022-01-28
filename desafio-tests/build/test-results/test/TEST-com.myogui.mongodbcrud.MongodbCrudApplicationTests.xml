@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.myogui.mongodbcrud.MongodbCrudApplicationTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-01-28T14:06:36" hostname="NTBK-TECH1081" time="0.684">
+  <properties/>
+  <testcase name="getAllProductsHttpRequestPayload()" classname="com.myogui.mongodbcrud.MongodbCrudApplicationTests" time="0.557"/>
+  <testcase name="getAllProducts()" classname="com.myogui.mongodbcrud.MongodbCrudApplicationTests" time="0.028"/>
+  <testcase name="getAllProductsHttpRequest()" classname="com.myogui.mongodbcrud.MongodbCrudApplicationTests" time="0.013"/>
+  <testcase name="createProduct()" classname="com.myogui.mongodbcrud.MongodbCrudApplicationTests" time="0.08"/>
+  <system-out><![CDATA[Mensaje previo a la ejecution de todos los tests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.2)
+
+2022-01-28 11:06:32.753  INFO 21395 --- [    Test worker] c.m.m.MongodbCrudApplicationTests        : Starting MongodbCrudApplicationTests using Java 11.0.13 on NTBK-TECH1081 with PID 21395 (started by myogui in /home/myogui/Cursos/BACKEND/Desafios/mongodb-crud-spring)
+2022-01-28 11:06:32.762  INFO 21395 --- [    Test worker] c.m.m.MongodbCrudApplicationTests        : No active profile set, falling back to default profiles: default
+2022-01-28 11:06:33.368  INFO 21395 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-01-28 11:06:33.403  INFO 21395 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 MongoDB repository interfaces.
+2022-01-28 11:06:33.847  INFO 21395 --- [    Test worker] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 0 (http)
+2022-01-28 11:06:33.865  INFO 21395 --- [    Test worker] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-01-28 11:06:33.866  INFO 21395 --- [    Test worker] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-28 11:06:33.940  INFO 21395 --- [    Test worker] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-01-28 11:06:33.940  INFO 21395 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1157 ms
+2022-01-28 11:06:34.110  INFO 21395 --- [    Test worker] o.m.d.cluster                            : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-01-28 11:06:34.174  INFO 21395 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:30}] to localhost:27017
+2022-01-28 11:06:34.174  INFO 21395 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:31}] to localhost:27017
+2022-01-28 11:06:34.175  INFO 21395 --- [localhost:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18937041}
+2022-01-28 11:06:36.107  INFO 21395 --- [    Test worker] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 37773 (http) with context path ''
+2022-01-28 11:06:36.119  INFO 21395 --- [    Test worker] c.m.m.MongodbCrudApplicationTests        : Started MongodbCrudApplicationTests in 3.71 seconds (JVM running for 5.043)
+Mensaje previo a la ejecucion de cada test
+2022-01-28 11:06:36.521  INFO 21395 --- [o-auto-1-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-28 11:06:36.522  INFO 21395 --- [o-auto-1-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-01-28 11:06:36.523  INFO 21395 --- [o-auto-1-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-01-28 11:06:36.594  INFO 21395 --- [o-auto-1-exec-1] o.m.d.connection                         : Opened connection [connectionId{localValue:3, serverValue:32}] to localhost:27017
+Mensaje previo a la ejecucion de cada test
+Mensaje previo a la ejecucion de cada test
+Mensaje previo a la ejecucion de cada test
+Se ejecutaron todos los tests con un tiempo de 4543
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
